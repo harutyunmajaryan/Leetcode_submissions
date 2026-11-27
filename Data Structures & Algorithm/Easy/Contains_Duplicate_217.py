@@ -5,6 +5,8 @@ class Solution(object):
         :rtype: bool
         """
 
+        #I created a set of numbers where keys are the numbers in the list and the values are the number of occurances of those numbers:
+        #Then you need to check if there is any key that contains a number > 1 if yes then change the status to True of not then return the default status = False
         set_items = {}
         for num in nums:
             if num not in set_items:
